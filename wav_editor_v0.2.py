@@ -17,7 +17,7 @@ filesname = input("File's name:\n>>").split(".wav")[0]
 frame = int(input("Step:\n>>"))
 
 file = input_dir+filesname+".wav"
-out_file = out_dir+"out_"+filesname+".wav"
+out_file = out_dir+"out_"+filesname+"_"+str(frame)+".wav"
 
 waveFile = wave.open(file, 'r')
 dest = wave.open(out_file, mode="wb")
